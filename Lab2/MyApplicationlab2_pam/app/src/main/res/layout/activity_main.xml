@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GemStore"
+                android:textColor="#111111"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="28dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bell" />
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="top|end"
+                    android:background="@drawable/notification_dot" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- WOMEN -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/category_selected"
+                    android:gravity="center"
+                    android:text="♀"
+                    android:textColor="#777777"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Women"
+                    android:textColor="#3B2E2A"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <!-- MEN -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/category_normal"
+                    android:gravity="center"
+                    android:text="♂"
+                    android:textColor="#999999"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Men"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <!-- ACCESSORIES -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/category_normal"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_glasses" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Accessories"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <!-- BEAUTY -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/category_normal"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_brush" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Beauty"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================= AUTUMN ================= -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/banner_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/collection" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:text="Autumn&#10;Collection&#10;2026"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+        <!-- ================= FEATURE PRODUCTS ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Feature Products"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show all"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <!-- PRODUCT 1 - SWEATER -->
+
+                <LinearLayout
+                    android:layout_width="112dp"
+                    android:layout_height="205dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="151dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sweater" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Turtleneck Sweater"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="$ 39.99"
+                        android:textColor="#222222"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <!-- PRODUCT 2 - DRESS -->
+
+                <LinearLayout
+                    android:layout_width="112dp"
+                    android:layout_height="205dp"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="151dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Long Sleeve Dress"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="$ 45.00"
+                        android:textColor="#222222"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <!-- PRODUCT 3 - SPORTSWEAR -->
+
+                <LinearLayout
+                    android:layout_width="112dp"
+                    android:layout_height="205dp"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical"
+                    android:id="@+id/sportwearProduct">
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="151dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sportwear" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Sportswear"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="$ 80.00"
+                        android:textColor="#222222"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <!-- ================= HANG OUT ================= -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/collection_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newcollection" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|  NEW COLLECTION"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="HANG OUT&#10;&amp; PARTY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- ================= RECOMMENDED ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Recommended"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show all"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- RECOMMENDED PRODUCTS -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:orientation="horizontal">
+
+
+                <!-- RECOMMENDED 1 - HOODIE -->
+
+                <LinearLayout
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/recommended_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="58dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hoodie" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="White fashion hoodie"
+                            android:textColor="#333333"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="$ 29.00"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- RECOMMENDED 2 - T-SHIRT -->
+
+                <LinearLayout
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/recommended_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="58dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tshirt" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cotton T-shirt"
+                            android:textColor="#333333"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="$ 30.00"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <!-- ================= TOP COLLECTION ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Top Collection"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show all"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- TOP COLLECTION 1 - SALE -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sale" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|  Sale up to 40%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="FOR SLIM&#10;&amp; BEAUTY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <!-- TOP COLLECTION 2 - SUMMER COLLECTION -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/collection_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/summer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|  Summer Collection 2021"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Most sexy&#10;&amp; fabulous&#10;design"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    <!-- ================= BOTTOM TWO ================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <!-- T-SHIRTS -->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/collection_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tshirt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T-Shirts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="The Office&#10;Life"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <!-- DRESSES -->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/collection_background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dresses" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dresses"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Elegant&#10;Design"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
