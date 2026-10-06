@@ -1,0 +1,225 @@
+{
+  "homePage": {
+    "storeName": "GemStore",
+    "categories": [
+      {
+        "id": "women",
+        "name": "Women",
+        "selected": true,
+        "iconUrl": ""
+      },
+      {
+        "id": "men",
+        "name": "Men",
+        "selected": false,
+        "iconUrl": ""
+      },
+      {
+        "id": "accessories",
+        "name": "Accessories",
+        "selected": false,
+        "iconUrl": ""
+      },
+      {
+        "id": "beauty",
+        "name": "Beauty",
+        "selected": false,
+        "iconUrl": ""
+      }
+    ],
+    "heroBanner": {
+      "id": "autumn-collection-2021",
+      "title": "Autumn Collection 2021",
+      "imageUrl": "assets/1.jpg",
+      "action": "View collection",
+      "slides": 3,
+      "activeSlide": 0
+    },
+    "featureProducts": [
+      {
+        "id": "p001",
+        "name": "Turtleneck Sweater",
+        "price": 39.99,
+        "currency": "USD",
+        "imageUrl": "assets/2.jpg"
+      },
+      {
+        "id": "p002",
+        "name": "Long Sleeve Dress",
+        "price": 45.0,
+        "currency": "USD",
+        "imageUrl": "assets/3.png"
+      },
+      {
+        "id": "p003",
+        "name": "Sportwear Set",
+        "price": 80.0,
+        "currency": "USD",
+        "imageUrl": "assets/4.png"
+      }
+    ],
+    "newCollection": {
+      "label": "NEW COLLECTION",
+      "title": "HANG OUT & PARTY",
+      "imageUrl": "assets/5.png"
+    },
+    "recommended": [
+      {
+        "id": "p004",
+        "name": "White fashion hoodie",
+        "price": 29.0,
+        "currency": "USD",
+        "imageUrl": "assets/6.png"
+      },
+      {
+        "id": "p005",
+        "name": "Cotton T-shirt",
+        "price": 30.0,
+        "currency": "USD",
+        "imageUrl": "assets/7.png"
+      }
+    ],
+    "topCollections": [
+      {
+        "id": "c001",
+        "label": "Sale up to 40%",
+        "title": "FOR SLIM & BEAUTY",
+        "imageUrl": "assets/8.png"
+      },
+      {
+        "id": "c002",
+        "label": "Summer Collection 2021",
+        "title": "Most sexy & fabulous design",
+        "imageUrl": "assets/9.png"
+      }
+    ],
+    "categoryPromos": [
+      {
+        "id": "cp001",
+        "category": "T-Shirts",
+        "title": "The Office Life",
+        "imageUrl": "assets/10.png"
+      },
+      {
+        "id": "cp002",
+        "category": "Dresses",
+        "title": "Elegant Design",
+        "imageUrl": "assets/11.png"
+      }
+    ]
+  },
+  "productPage": {
+    "product": {
+      "id": "p003",
+      "name": "Sportwear Set",
+      "price": 80.0,
+      "currency": "USD",
+      "mainImageUrl": "assets/12.png",
+      "galleryImageUrls": [
+        "assets/12.png"
+      ],
+      "rating": 4.9,
+      "ratingCount": 83,
+      "reviewCount": 47,
+      "description": "Sportswear is no longer under culture, it is no longer indie or cobbled together as it once was. Sport is fashion today. The top is oversized in fit and style, many need to size down.",
+      "descriptionExpanded": false,
+      "availableColors": [
+        {
+          "id": "beige",
+          "name": "Beige",
+          "value": "#E9C5AC"
+        },
+        {
+          "id": "black",
+          "name": "Black",
+          "value": "#000000"
+        },
+        {
+          "id": "coral",
+          "name": "Coral",
+          "value": "#EF6262"
+        }
+      ],
+      "selectedColor": "beige",
+      "availableSizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "selectedSize": "L",
+      "sizeAvailability": {
+        "S": false,
+        "M": false,
+        "L": true
+      },
+      "ratingBreakdown": [
+        {
+          "stars": 5,
+          "percentage": 80
+        },
+        {
+          "stars": 4,
+          "percentage": 12
+        },
+        {
+          "stars": 3,
+          "percentage": 5
+        },
+        {
+          "stars": 2,
+          "percentage": 3
+        },
+        {
+          "stars": 1,
+          "percentage": 0
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r001",
+          "author": "Jennifer Rose",
+          "avatarUrl": "assets/13.png",
+          "rating": 5.0,
+          "createdAtLabel": "5m ago",
+          "text": "I love it. Awesome customer service!! Helped me out with adding an additional item to my order. Thanks again!"
+        },
+        {
+          "id": "r002",
+          "author": "Kelly Rihanna",
+          "avatarUrl": "assets/14.png",
+          "rating": 5.0,
+          "createdAtLabel": "9m ago",
+          "text": "I'm very happy with order, It was delivered on and good quality. Recommended!"
+        }
+      ],
+      "similarProducts": [
+        {
+          "id": "p006",
+          "name": "Rise Crop Hoodie",
+          "price": 43.0,
+          "currency": "USD",
+          "imageUrl": "assets/15.png"
+        },
+        {
+          "id": "p007",
+          "name": "Gym Crop Top",
+          "price": 39.99,
+          "currency": "USD",
+          "imageUrl": "assets/16.png"
+        },
+        {
+          "id": "p008",
+          "name": "Sport Sweatshirt",
+          "price": 47.99,
+          "currency": "USD",
+          "imageUrl": "assets/17.png"
+        }
+      ],
+      "actions": {
+        "isFavorite": true,
+        "canAddToCart": true,
+        "addToCartLabel": "Add To Cart"
+      }
+    }
+  }
+}

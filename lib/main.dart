@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'home_page.dart';
+import 'cubit/store_cubit.dart';
+import 'repositories/store_repository.dart';
 
 void main() {
-  runApp(const GemStoreApp());
+  runApp(
+    BlocProvider(
+      create: (_) => StoreCubit(
+        StoreRepository(),
+      )..loadStore(),
+      child: const GemStoreApp(),
+    ),
+  );
 }
 
 class GemStoreApp extends StatelessWidget {

@@ -7,14 +7,12 @@ class ProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F7F7),
-
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(
               maxWidth: 375,
             ),
-
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -25,15 +23,40 @@ class ProductPage extends StatelessWidget {
                   // ==========================================================
 
                   SizedBox(
-                    height: 290,
+                    height: 350,
                     child: Stack(
+                      alignment: Alignment.center,
                       children: [
+
+                        // CERC
+                        Positioned(
+                          top: 105,
+                          left: 0,
+                          right: 0,
+                          child: Center(
+                            child: Container(
+                              width: 225,
+                              height: 225,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xFFF3E8E3),
+                              ),
+                            ),
+                          ),
+                        ),
 
                         // PRODUCT PHOTO
                         Positioned.fill(
-                          child: Image.asset(
-                            'assets/sportwear.jpg',
-                            fit: BoxFit.cover,
+                          child: Transform.translate(
+                            offset: const Offset(0, 85),
+                            child: Transform.scale(
+                              scale: 1.5,
+                              child: Image.asset(
+                                'assets/12.png',
+                                fit: BoxFit.contain,
+                                alignment: Alignment.bottomCenter,
+                              ),
+                            ),
                           ),
                         ),
 
@@ -122,7 +145,6 @@ class ProductPage extends StatelessWidget {
                         topRight: Radius.circular(12),
                       ),
                     ),
-
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(
                         20,
@@ -130,18 +152,13 @@ class ProductPage extends StatelessWidget {
                         20,
                         0,
                       ),
-
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
 
-                          // ==================================================
                           // PRODUCT NAME + PRICE
-                          // ==================================================
-
                           Row(
                             children: [
-
                               const Expanded(
                                 child: Text(
                                   'Sportwear Set',
@@ -152,7 +169,6 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const Text(
                                 '\$ 80.00',
                                 style: TextStyle(
@@ -166,13 +182,9 @@ class ProductPage extends StatelessWidget {
 
                           const SizedBox(height: 7),
 
-                          // ==================================================
                           // STARS
-                          // ==================================================
-
                           Row(
                             children: [
-
                               ...List.generate(
                                 5,
                                     (index) => const Padding(
@@ -184,9 +196,7 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const SizedBox(width: 4),
-
                               const Text(
                                 '(83)',
                                 style: TextStyle(
@@ -220,7 +230,6 @@ class ProductPage extends StatelessWidget {
                                   crossAxisAlignment:
                                   CrossAxisAlignment.start,
                                   children: [
-
                                     const Text(
                                       'Color',
                                       style: TextStyle(
@@ -228,21 +237,16 @@ class ProductPage extends StatelessWidget {
                                         color: Color(0xFF999999),
                                       ),
                                     ),
-
                                     const SizedBox(height: 9),
-
                                     Row(
                                       children: [
-
                                         _colorCircle(
                                           const Color(0xFFE9C4AB),
                                           selected: true,
                                         ),
-
                                         _colorCircle(
                                           const Color(0xFF292929),
                                         ),
-
                                         _colorCircle(
                                           const Color(0xFFE85D63),
                                         ),
@@ -258,7 +262,6 @@ class ProductPage extends StatelessWidget {
                                   crossAxisAlignment:
                                   CrossAxisAlignment.start,
                                   children: [
-
                                     const Text(
                                       'Size',
                                       style: TextStyle(
@@ -266,16 +269,11 @@ class ProductPage extends StatelessWidget {
                                         color: Color(0xFF999999),
                                       ),
                                     ),
-
                                     const SizedBox(height: 7),
-
                                     Row(
                                       children: [
-
                                         _sizeCircle('S'),
-
                                         _sizeCircle('M'),
-
                                         _sizeCircle(
                                           'L',
                                           selected: true,
@@ -303,7 +301,6 @@ class ProductPage extends StatelessWidget {
 
                           Row(
                             children: [
-
                               const Expanded(
                                 child: Text(
                                   'Description',
@@ -314,7 +311,6 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const Icon(
                                 Icons.keyboard_arrow_down,
                                 size: 17,
@@ -355,7 +351,6 @@ class ProductPage extends StatelessWidget {
 
                           Row(
                             children: [
-
                               const Expanded(
                                 child: Text(
                                   'Reviews',
@@ -366,7 +361,6 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const Icon(
                                 Icons.keyboard_arrow_down,
                                 size: 17,
@@ -377,27 +371,21 @@ class ProductPage extends StatelessWidget {
 
                           const SizedBox(height: 17),
 
-                          // ==================================================
                           // RATING SUMMARY
-                          // ==================================================
-
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
 
-                              // LEFT 4.9
                               SizedBox(
                                 width: 75,
                                 child: Column(
                                   crossAxisAlignment:
                                   CrossAxisAlignment.start,
                                   children: [
-
                                     Row(
                                       crossAxisAlignment:
                                       CrossAxisAlignment.end,
                                       children: [
-
                                         const Text(
                                           '4.9',
                                           style: TextStyle(
@@ -406,9 +394,7 @@ class ProductPage extends StatelessWidget {
                                             color: Color(0xFF333333),
                                           ),
                                         ),
-
                                         const SizedBox(width: 4),
-
                                         const Padding(
                                           padding: EdgeInsets.only(
                                             bottom: 3,
@@ -423,9 +409,7 @@ class ProductPage extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-
                                     const SizedBox(height: 8),
-
                                     const Text(
                                       '83 ratings',
                                       style: TextStyle(
@@ -441,31 +425,26 @@ class ProductPage extends StatelessWidget {
                               Expanded(
                                 child: Column(
                                   children: [
-
                                     _ratingBar(
                                       number: '5',
                                       percent: '80%',
                                       value: 0.80,
                                     ),
-
                                     _ratingBar(
                                       number: '4',
                                       percent: '12%',
                                       value: 0.12,
                                     ),
-
                                     _ratingBar(
                                       number: '3',
                                       percent: '5%',
                                       value: 0.05,
                                     ),
-
                                     _ratingBar(
                                       number: '2',
                                       percent: '3%',
                                       value: 0.03,
                                     ),
-
                                     _ratingBar(
                                       number: '1',
                                       percent: '0%',
@@ -481,7 +460,6 @@ class ProductPage extends StatelessWidget {
 
                           Row(
                             children: [
-
                               const Expanded(
                                 child: Text(
                                   '47 Reviews',
@@ -491,7 +469,6 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const Text(
                                 'WRITE A REVIEW',
                                 style: TextStyle(
@@ -499,9 +476,7 @@ class ProductPage extends StatelessWidget {
                                   color: Color(0xFFBBBBBB),
                                 ),
                               ),
-
                               const SizedBox(width: 4),
-
                               const Icon(
                                 Icons.edit,
                                 size: 9,
@@ -510,14 +485,11 @@ class ProductPage extends StatelessWidget {
                             ],
                           ),
 
-                          // ==================================================
                           // REVIEW 1
-                          // ==================================================
-
                           const SizedBox(height: 24),
 
                           _review(
-                            image: 'assets/pers1.jpg',
+                            image: 'assets/13.png',
                             name: 'Jennifer Rose',
                             time: '5m ago',
                             text:
@@ -526,14 +498,11 @@ class ProductPage extends StatelessWidget {
                                 'order. Thanks again!',
                           ),
 
-                          // ==================================================
                           // REVIEW 2
-                          // ==================================================
-
                           const SizedBox(height: 20),
 
                           _review(
-                            image: 'assets/pers2.jpg',
+                            image: 'assets/14.png',
                             name: 'Kelly Rihanna',
                             time: '9m ago',
                             text:
@@ -549,7 +518,6 @@ class ProductPage extends StatelessWidget {
 
                           Row(
                             children: [
-
                               const Expanded(
                                 child: Text(
                                   'Similar Product',
@@ -560,7 +528,6 @@ class ProductPage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-
                               const Icon(
                                 Icons.keyboard_arrow_down,
                                 size: 17,
@@ -571,44 +538,54 @@ class ProductPage extends StatelessWidget {
 
                           const SizedBox(height: 15),
 
-                          // ==================================================
-                          // 3 PRODUCTS - NO EXTRA SPACE AFTER LAST
-                          // ==================================================
+                          // 3 PRODUCTS - HORIZONTAL SCROLL
+                          SizedBox(
+                            height: 205,
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              physics: const BouncingScrollPhysics(),
+                              child: Row(
+                                children: [
 
-                          Row(
-                            children: [
+                                  // PRODUCT 1
+                                  SizedBox(
+                                    width: 125,
+                                    child: _similarProduct(
+                                      image: 'assets/15.png',
+                                      name: 'Rise Crop Hoodie',
+                                      price: '\$ 43.00',
+                                    ),
+                                  ),
 
-                              Expanded(
-                                child: _similarProduct(
-                                  image: 'assets/crophoodie.jpg',
-                                  name: 'Rise Crop Hoodie',
-                                  price: '\$ 43.00',
-                                ),
+                                  const SizedBox(width: 12),
+
+                                  // PRODUCT 2
+                                  SizedBox(
+                                    width: 125,
+                                    child: _similarProduct(
+                                      image: 'assets/16.png',
+                                      name: 'Gym Crop Top',
+                                      price: '\$ 39.99',
+                                    ),
+                                  ),
+
+                                  const SizedBox(width: 12),
+
+                                  // PRODUCT 3
+                                  SizedBox(
+                                    width: 125,
+                                    child: _similarProduct(
+                                      image: 'assets/17.png',
+                                      name: 'Sport Sweater',
+                                      price: '\$ 47.99',
+                                    ),
+                                  ),
+                                ],
                               ),
-
-                              const SizedBox(width: 12),
-
-                              Expanded(
-                                child: _similarProduct(
-                                  image: 'assets/criptop.jpg',
-                                  name: 'Gym Crop Top',
-                                  price: '\$ 39.99',
-                                ),
-                              ),
-
-                              const SizedBox(width: 12),
-
-                              Expanded(
-                                child: _similarProduct(
-                                  image: 'assets/sport.jpg',
-                                  name: 'Sport Sweater',
-                                  price: '\$ 47.99',
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
 
-                          const SizedBox(height: 28),
+                          const SizedBox(height: 10),
 
                           // ==================================================
                           // ADD TO CART
@@ -616,50 +593,51 @@ class ProductPage extends StatelessWidget {
 
                           Container(
                             width: double.infinity,
-                            height: 46,
-                            decoration: BoxDecoration(
-                              color: const Color(0xFF333333),
-                              borderRadius: BorderRadius.circular(16),
+                            height: 98,
+                            decoration: const BoxDecoration(
+                              color: Color(0xFF333333),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(30),
+                                topRight: Radius.circular(30),
+                              ),
                             ),
-                            child: const Row(
-                              mainAxisAlignment:
-                              MainAxisAlignment.center,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-
-                                Icon(
-                                  Icons.shopping_bag_outlined,
-                                  size: 16,
-                                  color: Colors.white,
+                                Row(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.center,
+                                  children: const [
+                                    Icon(
+                                      Icons.shopping_bag,
+                                      size: 18,
+                                      color: Colors.white,
+                                    ),
+                                    SizedBox(width: 12),
+                                    Text(
+                                      'Add To Cart',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
                                 ),
 
-                                SizedBox(width: 10),
+                                const SizedBox(height: 15),
 
-                                Text(
-                                  'Add To Cart',
-                                  style: TextStyle(
+                                // HOME INDICATOR
+                                Container(
+                                  width: 110,
+                                  height: 4,
+                                  decoration: BoxDecoration(
                                     color: Colors.white,
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w500,
+                                    borderRadius:
+                                    BorderRadius.circular(10),
                                   ),
                                 ),
                               ],
-                            ),
-                          ),
-
-                          const SizedBox(height: 14),
-
-                          // ==================================================
-                          // BOTTOM HOME INDICATOR
-                          // ==================================================
-
-                          Center(
-                            child: Container(
-                              width: 90,
-                              height: 3,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF333333),
-                                borderRadius: BorderRadius.circular(3),
-                              ),
                             ),
                           ),
 
@@ -677,9 +655,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
+  // ============================================================
   // IMAGE INDICATOR
-  // ========================================================================
+  // ============================================================
 
   static Widget _imageIndicator(bool active) {
     return Container(
@@ -695,9 +673,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
-  // COLOR
-  // ========================================================================
+  // ============================================================
+  // COLOR CIRCLE
+  // ============================================================
 
   static Widget _colorCircle(
       Color color, {
@@ -726,9 +704,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
-  // SIZE
-  // ========================================================================
+  // ============================================================
+  // SIZE CIRCLE
+  // ============================================================
 
   static Widget _sizeCircle(
       String size, {
@@ -758,9 +736,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
+  // ============================================================
   // RATING BAR
-  // ========================================================================
+  // ============================================================
 
   static Widget _ratingBar({
     required String number,
@@ -771,7 +749,6 @@ class ProductPage extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 5),
       child: Row(
         children: [
-
           SizedBox(
             width: 10,
             child: Text(
@@ -829,9 +806,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
+  // ============================================================
   // REVIEW
-  // ========================================================================
+  // ============================================================
 
   static Widget _review({
     required String image,
@@ -842,11 +819,8 @@ class ProductPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-
         Row(
           children: [
-
-            // ROUND PHOTO
             ClipOval(
               child: Image.asset(
                 image,
@@ -862,10 +836,8 @@ class ProductPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Row(
                     children: [
-
                       Text(
                         name,
                         style: const TextStyle(
@@ -922,9 +894,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  // ========================================================================
+  // ============================================================
   // SIMILAR PRODUCT
-  // ========================================================================
+  // ============================================================
 
   static Widget _similarProduct({
     required String image,
@@ -934,7 +906,6 @@ class ProductPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-
         AspectRatio(
           aspectRatio: 0.74,
           child: ClipRRect(
