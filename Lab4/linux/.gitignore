@@ -1,0 +1,6 @@
+flutter/ephemeral
+.dart_tool/
+build/
+.idea/
+*.iml
+.DS_Store
